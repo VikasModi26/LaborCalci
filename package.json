@@ -1,0 +1,40 @@
+{
+  "name": "reactjs",
+  "version": "1.0.0",
+  "description": "This is a React tutorial.",
+  "scripts": {
+    "start": "parcel public/index.html",
+    "build": "build parcel public/index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ReactJS"
+  },
+  "author": "Suman Bharati",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.13.5",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "parcel": "^2.11.0",
+    "postcss": "^8.4.35",
+    "process": "^0.11.10",
+    "tailwindcss": "^3.4.1",
+    "tailwindcss-animate": "^1.0.7",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.2.1",
+    "jspdf": "^3.0.0",
+    "jspdf-autotable": "^5.0.2",
+    "lucide-react": "^0.477.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^9.1.0",
+    "react-router-dom": "^6.22.1"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ]
+}
