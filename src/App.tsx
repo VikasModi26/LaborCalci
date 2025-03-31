@@ -1,12 +1,13 @@
 import React from "react"
 import ReactDOM from "react-dom/client"
 import { BrowserRouter as Router, Route, Routes, useParams } from "react-router-dom"
-import { ThemeProvider } from "./components/ThemeProvider"
-import AuthPage from "./components/auth/AuthPage"
-import ProjectsPage from "./components/projects/ProjectsPage"
-import ProjectView from "./components/projects/ProjectView"
+import { ThemeProvider } from "./components/ui/ThemeProvider"
+import AuthPage from "./components/landingPage/AuthPage"
+import ProjectsPage from "./components/projectsPage/ProjectsPage"
+import ProjectView from "./components/roomsPage/ProjectView"
 import "./App.css"
-import { mockProjects } from "./lib/mockData"
+import { mockProjects } from "./utils/mockData"
+import GlobalSettings from "./globalSettingsPage/GlobalSettings"
 
 
 
@@ -20,6 +21,7 @@ function App() {
           <Route path="/" element={<AuthPage />} />
           <Route path="/dashboard" element={<ProjectsPage />} />
           <Route path="/project/:id" element={<ProjectWrapper />} />
+          <Route path='/globalSettings' element={<GlobalSettings />} />
         </Routes>
       </Router>
     </ThemeProvider>
